@@ -1,13 +1,14 @@
 ﻿using System;
+using System.Threading.Tasks;
 
 namespace WebsiteTraverser
 {
     class Program
     {
-        static void Main(string[] args)
+        static async Task Main(string[] args)
         {
             var websiteTraverser = new Traverser("https://tretton37.com");
-            websiteTraverser.Run();
+            await websiteTraverser.Run();
 
             Console.ReadLine();
         }
